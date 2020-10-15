@@ -1,0 +1,83 @@
+body, html {
+  height: 100%;
+  font: 500 25px/1.2 'Caveat', cursive, sans-serif;
+  color: #454545;
+  background-color: #E8E8E8;
+}
+.bg {
+  /* The image used */
+  background-image: url("./img/paper.png");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+h2{
+  font-variant: small-caps;
+  font-size: smaller;
+  font-weight: bold;
+}
+
+
+
+
+
+.new {
+  padding: 50px;
+}
+
+.form-group {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.form-group input {
+  padding: 5%;
+  height: initial;
+  width: initial;
+  margin-bottom: 0;
+  display: none;
+  cursor: pointer;
+}
+
+.form-group label {
+  position: relative;
+  cursor: pointer;
+}
+
+.form-group label:before {
+  content:'';
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: 2px solid #656565;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+  padding: 10px;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-right: 15px;
+  margin-bottom: 10px;
+}
+
+.form-group input:checked + label:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 5px;
+  left: 9px;
+  width: 6px;
+  height: 14px;
+  border: solid #656565;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.no-border{
+  border: none;
+}
